@@ -42,12 +42,12 @@ main::-webkit-scrollbar {
 }
 
 #pedidos {
+    position: relative;
     background-color: #c6d8d38c;
     width: 90vw;
     height: 70vh;
     margin: auto;
     border-radius: 10px;
-    overflow-y: scroll;
     padding-top: 20px;
 }
 
@@ -59,6 +59,58 @@ main::-webkit-scrollbar {
 
 #pedidos::-webkit-scrollbar {
     display: none;
+}
+
+#containerpedidos {
+    height: 95%;
+    overflow-y: scroll;
+}
+
+#containerpedidos::-webkit-scrollbar {
+    display: none;
+}
+
+.pedido {
+    position: relative;
+    border-radius: 10px;
+    background-color: var(--color1);
+    height: 55px;
+    margin: 15px;
+}
+
+.nomepedido {
+    position: absolute;
+    top: 20%;  
+    left: 10px;
+}
+
+.precopedido {
+    font-size: 0.9em;
+    position: absolute;
+    top: 50%;
+    left: 10px;
+}
+
+.precopedido::before {
+    content: "R$ ";
+}
+
+.pedido img {
+    height: 25px;
+    position: absolute;
+    top: 15px;
+    right: 10px;
+}
+
+#total {
+    width: 100%;
+    background-color: var(--color3);
+    position: absolute;
+    border-radius: 10px;
+    bottom: 0px;
+    color: white;
+    font-weight: bold;
+    text-indent: 15px;
 }
 
 #buttongarcom {
