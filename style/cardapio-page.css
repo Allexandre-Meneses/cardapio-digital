@@ -30,7 +30,7 @@ header {
 }
 
 main {
-    max-width: 90%;
+    width: 100%;
     /*padding-bottom: 5px;*/
     max-height: 82vh;
     margin: auto;
@@ -51,7 +51,7 @@ h1 {
 }
 
 .categorias {
-    max-width: 90%;
+    max-width: 100%;
     margin: auto;
     text-align: start;
     margin-top: 20px;
