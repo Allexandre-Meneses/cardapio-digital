@@ -48,6 +48,13 @@ main::-webkit-scrollbar {
     margin: auto;
     border-radius: 10px;
     overflow-y: scroll;
+    padding-top: 20px;
+}
+
+#pedidos > label {
+    color: white;
+    font-weight: bold;
+    margin-left: 20px;
 }
 
 #pedidos::-webkit-scrollbar {
