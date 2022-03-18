@@ -1,0 +1,112 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed&family=Sriracha&display=swap');
+
+:root {
+    --color0: #BA2D0B;
+    --color1: #FAA613;
+    --color2: #C6D8D3;
+    --color3: #2E933C;
+    --color4: #134611;
+    --fontDestaque:'Sansita Swashed', cursive;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial;
+}
+
+body {
+    background-color: var(--color4);
+    padding-top: 25px;
+}
+
+body::-webkit-scrollbar { 
+    display: none;
+  }
+
+header {
+    text-align: center;
+}
+
+main {
+    width: 90vw;
+    height: 70vh;
+    margin: auto;
+}
+
+main::-webkit-scrollbar {
+    display: none;
+}
+
+#pedidos {
+    background-color: #c6d8d38c;
+    width: 90vw;
+    height: 70vh;
+    margin: auto;
+    border-radius: 10px;
+    overflow-y: scroll;
+}
+
+#pedidos::-webkit-scrollbar {
+    display: none;
+}
+
+#buttongarcom {
+
+    margin-top: 20px;
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.671);
+    background-color: var(--color1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+#buttongarcom img {
+    padding-top: 10px;
+    padding-bottom: 5px;
+    margin: auto;
+    display: block;
+}
+
+#buttongarcom label {
+    display: block;
+    padding-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    background-color: var(--color2);
+    width: 100%;
+}
+
+footer div {
+    padding-top: 5px;
+    width: 25%;
+    display: inline-block;
+}
+
+footer a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.801);
+}
+
+footer img {
+    height: 20px;
+}
+
+footer label {
+    display: block;
+}
+
+footer #menupedidos label {
+    color: var(--color0);
+}
+
+footer #menupedidos {
+    border-top: 3px solid var(--color0);
+}
+
+

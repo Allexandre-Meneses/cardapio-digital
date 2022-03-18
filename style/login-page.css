@@ -1,0 +1,113 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed&family=Sriracha&display=swap');
+
+:root {
+    --color0: #BA2D0B;
+    --color1: #FAA613;
+    --color2: #C6D8D3;
+    --color3: #2E933C;
+    --color4: #134611;
+    --fontDestaque:'Sansita Swashed', cursive;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial;
+}
+
+
+body {
+    background-color: var(--color4);
+}
+
+header {
+    text-align: center;
+}
+
+h1 {
+    font-family: var(--fontDestaque);
+    color: var(--color1);
+    padding: 15px;
+    text-shadow: 4px 2px 10px rgb(0, 0, 0);
+}
+
+main {
+    border-radius: 10px;
+    padding: 10px;
+    margin: auto;
+    background-color: #c6d8d379;
+    max-width: 300px;
+    height: 500px;
+    box-shadow: 5px 0px 15px rgba(0, 0, 0, 0.61);
+}
+
+main #msgbv {
+    color: white;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-align: center;
+    padding: 15px;
+}
+
+main #instrucoes {
+    color: white;
+    font-size: 1.5em;
+    margin-top: 40px;
+    text-align: center;
+    padding: 15px;
+}
+
+div#inputname {
+    text-align: center;
+    margin: auto;
+}
+
+label {
+    font-weight: bold;
+    text-shadow: 2px 1px 2px black;
+    color: var(--color1);
+    padding-left: 8px;
+    display: block;
+}
+
+input {
+    border: none;
+    padding: 20px;
+    margin: auto;
+    width: 85%;
+    border-radius: 10px;
+    box-shadow: 1px 0px 4px rgb(0, 0, 0);
+}
+
+div#buttons {
+    text-align: center;
+    margin-top: 100px;
+}
+
+main > #buttons div{
+    display: inline-block;
+}
+
+main > #buttons p {
+    text-align: center;
+}
+
+main  div#buttongarcom {
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.671);
+    background-color: var(--color1);
+    border-radius: 10px;
+    padding: 10px 20px;
+    /*width: 150px;
+    height: 70px;  */
+}
+
+main  div#buttoncardapio {
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.671);
+    background-color: var(--color3);
+    border-radius: 10px;
+    padding: 10px 45px;
+    /*width: 200px;
+    height: 70px;  */
+}
