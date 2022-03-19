@@ -97,6 +97,7 @@ main {
 #buttons {
     position: relative;
     margin: auto;
+    padding-bottom: 150px;
 }
 
 #buttons img {
