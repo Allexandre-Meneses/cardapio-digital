@@ -86,6 +86,7 @@ main {
     width: 200px;
     height: 70px;
     margin: auto;
+    margin-top: 50px;
 }
 
 #buttonlogin label {
