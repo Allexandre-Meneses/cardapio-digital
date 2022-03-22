@@ -1,0 +1,125 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed&family=Sriracha&display=swap');
+
+:root {
+    --color0: #BA2D0B;
+    --color1: #FAA613;
+    --color2: #C6D8D3;
+    --color3: #2E933C;
+    --color4: #134611;
+    --fontDestaque:'Sansita Swashed', cursive;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial;
+}
+
+h1 {
+    font-family: var(--fontDestaque);
+    color: var(--color1);
+    padding: 15px;
+    text-shadow: 4px 2px 10px rgb(0, 0, 0);
+}
+
+body {
+    background-color: var(--color4);
+    overflow: hidden;
+}
+
+/*body::-webkit-scrollbar { 
+    display: none;
+}*/
+
+header {
+    text-align: end;
+}
+
+h1 {
+    text-align: center;
+}
+
+#novoproduto {
+    margin-right: 40px;
+    display: inline-block;
+    background-color: #c6d8d342;
+    border-radius: 5px;
+    padding: 10px 10px;
+}
+
+#novoproduto:hover {
+    background-color: #c6d8d32c;
+}
+
+#novoproduto label {
+    font-size: 1.5em;
+    color: white;
+    padding-right: 15px;
+}
+
+#novoproduto img {
+    padding-right: 5px;
+    padding-top: 3px;
+}
+
+main {
+    width: 100%;
+    height: 67vh;
+    margin: auto;
+    border-radius: 10px;
+    padding-bottom: 100px;
+    margin-bottom: 55px;
+    overflow-y: scroll;
+}
+
+main::-webkit-scrollbar {
+    display: none;
+}
+
+.categorias {
+    max-width: 100%;
+    margin: auto;
+    text-align: start;
+    margin-top: 20px;
+}
+
+.categorias > label {
+    font-size: 1.5em;
+    padding-left: 20px;
+    color: var(--color1);
+}
+
+div.itens {
+    padding-left: 20px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.itens::-webkit-scrollbar { 
+    display: none;
+  }
+
+.item {
+    margin-top: 20px;
+    display: inline-block;
+    background-color: var(--color1);
+    border-radius: 7px;
+    height: 200px;
+    width: 200px;
+    text-align: center;
+}
+
+.item:hover {
+    transform: scale(1.02);
+}
+
+.item label {
+    text-align: center;
+    vertical-align: bottom;
+}
+
+
+
