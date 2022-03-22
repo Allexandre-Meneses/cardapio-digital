@@ -25,79 +25,92 @@ header {
     text-align: center;
 }
 
-h1 {
-    text-align: center;
-    font-family: var(--fontDestaque);
-    color: var(--color1);
-    padding: 15px;
-    text-shadow: 4px 2px 10px rgb(0, 0, 0);
-}
-
-p {
-    color: white;
-    font-size: 1.5em;
-    margin-top: 20px;
-    text-align: center;
-    padding: 15px;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
 main {
+    position: relative;
     border-radius: 10px;
     padding: 10px;
     margin: 20px auto;
     background-color: #c6d8d379;
-    max-width: 600px;
+    max-width: 900px;
     height: 90vh;
     box-shadow: 5px 0px 15px rgba(0, 0, 0, 0.61);
 }
 
-#login {
+main > img {
+    display: inline-block;
+    border: 3px dashed black;
+    border-radius: 10px;
+    height: 250px;
+    width: 250px;
+    margin: 15px;
+}
+
+main > label {
+    position: absolute;
+    top: 20%;
     text-align: center;
-    margin: auto;
+    color: white;
+    font-size: 2.2em;
+    width: 60%;
 }
 
-#login label {
-    text-align: start;
-    font-weight: bold;
-    text-shadow: 2px 1px 2px black;
-    color: var(--color1);
-    padding: 8px;
-    margin-left: 20px;
-    display: block;
-}
-
-#login input {
-    border: none;
-    padding: 20px;
-    margin: auto;
-    margin-bottom: 20px;
-    width: 85%;
-    border-radius: 10px;
-    box-shadow: 1px 0px 4px rgb(0, 0, 0);
-}
-
-#buttonlogin {
-    position: relative;
-    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.671);
-    background-color: var(--color1);
-    border-radius: 10px;
-    width: 200px;
-    height: 70px;
-    margin: auto;
-    margin-top: 50px;
-}
-
-#buttonlogin label {
+#buttoneditar {
     position: absolute;
-    left: 32%;
-    bottom: 40%;
+    top: 15px;
+    right: 15px;
+    background-color: #13461156;
+    border-radius: 5px;
+    padding: 0px 10px;
 }
 
-#buttonlogin img {
+#buttoneditar:hover {
+    background-color: #134611ad
+}
+
+#buttoneditar img {
+    height: 35px;
+    padding-right: 5px;
+    vertical-align: middle;
+    padding: 5px 10px;
+}
+
+#buttoneditar label {
+    right: 20px;
+    font-size: 2em;
+    color: black;
+    padding-right: 15px;
+    padding-left: 10px;
+    vertical-align: middle;
+}
+
+#preco {
     position: absolute;
-    height: 25px;
-    left: 60%;
-    bottom: 35%;
+    right: 30px;
+    top: 46%;
+}
+
+#preco label {
+    color: white;
+    font-size: 1.5em;
+}
+
+#descricao {
+    margin: 15px;
+}
+
+#descricao label {
+    color: white;  
+    font-size: 1.2em;
+}
+
+#descricao p {
+    height: 30vh;
+    margin-top: 10px;
+    text-indent: 2em;
+    color: black;
+    overflow-y: scroll;
+}
+
+#descricao p::-webkit-scrollbar {
+    display: none;
 }
