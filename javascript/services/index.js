@@ -1,9 +1,9 @@
 
 
-function vercardapio() {
+function vercardapio(local) {
     const name = window.document.querySelector('#inputname input').value
 
-    window.location.href = "pages/cardapio.html"
+    window.location.href = local;
 }
 
 function chamagarcom() {
