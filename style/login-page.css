@@ -85,8 +85,9 @@ div#buttons {
     margin-top: 100px;
 }
 
-main > #buttons div{
+#buttons button{
     display: inline-block;
+    margin: 5px;
 }
 
 main > #buttons p {
@@ -94,20 +95,22 @@ main > #buttons p {
     color: black;
 }
 
-main  div#buttongarcom {
+#buttongarcom {
     box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.671);
     background-color: var(--color1);
     border-radius: 10px;
     padding: 10px 20px;
+    border: none;
     /*width: 150px;
     height: 70px;  */
 }
 
-main  div#buttoncardapio {
+#buttoncardapio {
     box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.671);
     background-color: var(--color3);
     border-radius: 10px;
     padding: 10px 45px;
+    border: none;
     /*width: 200px;
     height: 70px;  */
 }
