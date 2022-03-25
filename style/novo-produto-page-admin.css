@@ -36,7 +36,8 @@ main {
     box-shadow: 5px 0px 15px rgba(0, 0, 0, 0.61);
 }
 
-main > img {
+#icone {
+    position: relative;
     display: inline-block;
     border: 1px solid black;
     border-radius: 10px;
@@ -45,16 +46,41 @@ main > img {
     margin: 15px;
 }
 
-main > label {
+#icone img {
     position: absolute;
-    top: 20%;
-    text-align: center;
+    bottom: 50%;
+    right: 50%;
+    transform: translate(50%, 50%)
+}
+
+#name {
+    display: inline-block;
+    position: absolute;
+    top: 15%;
     color: white;
     font-size: 2.2em;
+    height: 16vh;
     width: 60%;
 }
 
-#buttoneditar {
+#name textarea {
+    padding: 10px;
+    max-width: 40vw;
+    height: 90%;
+    border: none;
+    border-radius: 7px;
+    background-color: var(--color2);
+    font-size: 1.3em;
+    text-align: start;
+    vertical-align: text-top;
+}
+
+#name label {
+    color: white;  
+    font-size: 0.6em;
+}
+
+#buttonsalvar {
     position: absolute;
     top: 15px;
     right: 15px;
@@ -63,18 +89,18 @@ main > label {
     padding: 0px 10px;
 }
 
-#buttoneditar:hover {
+#buttonsalvar:hover {
     background-color: #134611ad
 }
 
-#buttoneditar img {
+#buttonsalvar img {
     height: 35px;
     padding-right: 5px;
     vertical-align: middle;
     padding: 5px 10px;
 }
 
-#buttoneditar label {
+#buttonsalvar label {
     right: 20px;
     font-size: 2em;
     color: black;
@@ -94,6 +120,14 @@ main > label {
     font-size: 1.5em;
 }
 
+#preco input {
+    border: none;
+    border-radius: 3px;
+    padding: 4px;
+    background-color: var(--color2);
+    font-size: 1.2em;
+}
+
 #descricao {
     margin: 15px;
 }
@@ -103,14 +137,15 @@ main > label {
     font-size: 1.2em;
 }
 
-#descricao p {
+#descricao textarea {
+    display: block;
     height: 30vh;
+    width: 100%;
+    border: none;
+    border-radius: 7px;
+    background-color: var(--color2);
+    font-size: 1.2em;
+    padding: 5px;
     margin-top: 10px;
-    text-indent: 2em;
-    color: black;
     overflow-y: scroll;
-}
-
-#descricao p::-webkit-scrollbar {
-    display: none;
 }
