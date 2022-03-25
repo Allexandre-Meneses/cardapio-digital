@@ -6,8 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style/cardapio-page.css">
     <title>Cardápio</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="../services/api.js"></script>
+    <script src="../services/cardapio.js"></script>
 </head>
-<body>
+<body onload="getCardapio()">
     <header>
         <h1>Sabor Marcante</h1>
     </header>
