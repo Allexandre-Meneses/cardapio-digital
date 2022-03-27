@@ -62,7 +62,7 @@ h1 {
     color: var(--color1);
 }
 
-div.itens {
+.itens {
     padding-left: 20px;
     overflow-x: scroll;
     overflow-y: hidden;
@@ -82,14 +82,18 @@ div.itens {
     display: inline-block;
     background-color: var(--color1);
     border-radius: 7px;
-    height: 90px;
-    width: 90px;
+    height: 150px;
+    width: 150px;
+    vertical-align: middle;
     text-align: center;
 }
 
 .item label {
+    margin: auto;
+    border: 1px dashed;
     text-align: center;
-    vertical-align: bottom;
+    font-size: 1.5em;
+    white-space: normal;
 }
 
 footer {

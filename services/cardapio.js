@@ -46,7 +46,7 @@ function getProdutos() {
                 let ShowProdutos = document.createElement('div')
                 ShowProdutos.setAttribute('class', 'item')
                 ShowProdutos.innerHTML = `
-                    <label for="">${produtos[count]['name']}</label>
+                    <label>${produtos[count]['name']}</label>
                 `
                 itens.append(ShowProdutos)
             }
