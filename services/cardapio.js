@@ -21,56 +21,38 @@ function getCategorias() {
                 ShowCategorias.innerHTML = `
                     <label for="">${categorias[count]['name']}:</label>
                     <br>
-                    <div class="itens">  
+                    <div id="id${categorias[count]['id']}" class="itens">  
                     </div>
                 `
-
                 main.append(ShowCategorias)  
             }
-
-            // MÉTODO PARA OBTER OS PRODUTOS 
-
-            let itensdiv = document.querySelector('.itens')
-
-            axios.get(url + '/produto')
-            .then(response => {
-               let itens = response.data;
-   
-               for (let count in itens) {
-                   let ShowProdutos = document.createElement('div')
-                   ShowProdutos.setAttribute('class', 'item')
-                   ShowProdutos.innerHTML = `
-                       <label for="">${itens[count]['name']}</label>
-                   `
-                   itensdiv.append(ShowProdutos)
-               }
-            })
-            .catch(error => {
-             
-            })
          })
          .catch(error => {
-            alert(JSON.stringify(error))
+            alert(JSON.stringify(error.data))
          })
 }
 
-function getProdutos() {
+// MÉTODO PARA OBTER OS PRODUTOS
 
+function getProdutos() {
     axios.get(url + '/produto')
          .then(response => {
-            let itens = response.data;
+            let produtos = response.data;
+            let itens;
 
-            for (let count in itens) {
+            console.log(produtos)
+            for (let count in produtos) {
+                itens = document.querySelector(`.itens#id${produtos[count]['categoria_id']}`)
                 let ShowProdutos = document.createElement('div')
                 ShowProdutos.setAttribute('class', 'item')
                 ShowProdutos.innerHTML = `
-                    <label for="">${itens[count]['name']}</label>
+                    <label for="">${produtos[count]['name']}</label>
                 `
-                main.append(ShowProdutos)
+                itens.append(ShowProdutos)
             }
-            return
          })
          .catch(error => {
-          
-         })
+            alert(JSON.stringify(error.data))
+         })         
 }
+
