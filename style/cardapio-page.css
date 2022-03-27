@@ -71,7 +71,11 @@ div.itens {
 
 .itens::-webkit-scrollbar { 
     display: none;
-  }
+}
+
+.itens div {
+    margin-right: 10px;
+}
 
 .item {
     margin-top: 20px;
