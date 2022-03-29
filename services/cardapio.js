@@ -1,4 +1,3 @@
-
 // MÉTODO PARA OBTER AS CATEGORIAS
 
 function getCategorias() {
@@ -11,7 +10,8 @@ function getCategorias() {
             for (let count in categorias){
                 let ShowCategorias = document.createElement('div')
                 ShowCategorias.setAttribute('class', 'categorias')
-                ShowCategorias.setAttribute('onclick', `abreProdutos(${categorias[count]['id']})`)
+                ShowCategorias.setAttribute('onclick', `abreProdutos(${categorias[count]['id']},
+                "${categorias[count]['name']}")`)
                 ShowCategorias.innerHTML = `
                     <label>${categorias[count]['name']}</label>
                 `
@@ -26,6 +26,7 @@ function getCategorias() {
 // MÉTODO PARA OBTER OS PRODUTOS
 
 function getProdutos() {
+    document.querySelector('label#categoria').innerHTML = `${localStorage.getItem('categoria')}:`
     axios.get(url + '/produto')
          .then(response => {
             let section = document.querySelector('section')
