@@ -1,11 +1,4 @@
 
-// MÉTODOS PARA MONTAR O CARDAPIO
-
-function getCardapio() {
-    getCategorias()
-    getProdutos()
-}
-
 // MÉTODO PARA OBTER AS CATEGORIAS
 
 function getCategorias() {
@@ -18,11 +11,9 @@ function getCategorias() {
             for (let count in categorias){
                 let ShowCategorias = document.createElement('div')
                 ShowCategorias.setAttribute('class', 'categorias')
+                ShowCategorias.setAttribute('onclick', `abreProdutos(${categorias[count]['id']})`)
                 ShowCategorias.innerHTML = `
-                    <label for="">${categorias[count]['name']}:</label>
-                    <br>
-                    <div id="id${categorias[count]['id']}" class="itens">  
-                    </div>
+                    <label>${categorias[count]['name']}</label>
                 `
                 main.append(ShowCategorias)  
             }
@@ -37,22 +28,25 @@ function getCategorias() {
 function getProdutos() {
     axios.get(url + '/produto')
          .then(response => {
+            let section = document.querySelector('section')
             let produtos = response.data;
-            let itens;
+            let id = localStorage.getItem('id')
 
-            console.log(produtos)
             for (let count in produtos) {
-                itens = document.querySelector(`.itens#id${produtos[count]['categoria_id']}`)
+                if (produtos[count]['categoria_id'] == id) {
                 let ShowProdutos = document.createElement('div')
-                ShowProdutos.setAttribute('class', 'item')
+                ShowProdutos.setAttribute('class', 'produto')
                 ShowProdutos.innerHTML = `
-                    <label>${produtos[count]['name']}</label>
+                    <label class="nome">${produtos[count]['name']}</label>
+                    <label class="preco">${produtos[count]['preco']}</label>
                 `
-                itens.append(ShowProdutos)
+                section.append(ShowProdutos)
+                }
             }
          })
          .catch(error => {
             alert(JSON.stringify(error.data))
          })         
 }
+
 

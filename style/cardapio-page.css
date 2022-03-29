@@ -30,9 +30,9 @@ header {
 }
 
 main {
-    width: 100%;
-    /*padding-bottom: 5px;*/
+    width: 90%;
     max-height: 82vh;
+    padding: 15px;
     margin: auto;
     border-radius: 10px;
     margin-bottom: 55px;
@@ -51,49 +51,55 @@ h1 {
 }
 
 .categorias {
-    max-width: 100%;
+    border: 5px;
+    display: flex;
+    height: 15vh;
+    width: 90vw;
+    border-radius: 10px;
+    background-color: var(--color1);
     margin: auto;
     text-align: start;
     margin-top: 20px;
 }
 
 .categorias > label {
-    padding-left: 20px;
-    color: var(--color1);
-}
-
-.itens {
-    padding-left: 20px;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    white-space: nowrap;
-}
-
-.itens::-webkit-scrollbar { 
-    display: none;
-}
-
-.itens div {
-    margin-right: 10px;
-}
-
-.item {
-    margin-top: 20px;
-    display: inline-block;
-    background-color: var(--color1);
-    border-radius: 7px;
-    height: 150px;
-    width: 150px;
-    vertical-align: middle;
-    text-align: center;
-}
-
-.item label {
+    font-size: 1.4em;
+    font-weight: bold;
     margin: auto;
-    border: 1px dashed;
+    color: black;
+}
+
+#categoria {
+    color: var(--color1);
+    font-size: 1.2em;
+}
+
+.produto {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color1);
+    height: 150px;
+    border-radius: 7px;
+    margin-top: 10px;
     text-align: center;
-    font-size: 1.5em;
-    white-space: normal;
+}
+
+label.nome {
+    font-size: 1.6em;
+    margin-top: -15px
+}
+
+label.preco {
+    position: absolute;
+    font-size: 1.4em;
+    bottom: 20px;
+}
+
+label.preco::before {
+    content: "R$ ";
 }
 
 footer {
