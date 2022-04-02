@@ -1,6 +1,6 @@
 // URL BASE DA APLICAÇÃO
 
-const url = "http://localhost:3030"
+const url = "http://localhost:8080"
 
 
 /*import axios from "axios";

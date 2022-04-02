@@ -13,3 +13,7 @@ function abreProduto(produto_id) {
     localStorage.setItem('produto_id', produto_id)
     window.location.href = "produto.html"
 }
+
+function AdicionarPedido() {
+    
+}
