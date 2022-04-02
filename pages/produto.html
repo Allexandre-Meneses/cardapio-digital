@@ -6,8 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style/produto-page.css">
     <title>Cardápio</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="../services/api.js"></script>
+    <script src="../services/cardapio.js"></script>
 </head>
-<body>
+<body onload="getProduto()">
     <header>
     </header>
     <div id="conteudo">
@@ -16,7 +19,7 @@
                 <img src="" alt="">
             </div>
             <div id="nameproduto">
-                <label for="">Pizza de Frango com Catupiry</label>
+                <!--<label for="">Pizza de Frango com Catupiry</label>-->
             </div>
             <div id="descricao">
                 <label for="">Descrição:</label>
@@ -25,7 +28,7 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo illum cupiditate accusantium eligendi assumenda laborum, error tempora, earum, eos dolores tempore iusto tenetur! Distinctio ipsa fugit cum sunt iste voluptatum.
                 </p>
             </div>
-            <label id="preco" for="">35,00</label>
+            <label id="preco" for=""></label>
         </main>
         <div id="buttons">
             <div id="buttongarcom">

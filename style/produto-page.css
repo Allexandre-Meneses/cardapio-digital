@@ -53,6 +53,7 @@ main {
     text-align: center;
     max-height: 10vh;
     margin-top: 10px;
+    margin-bottom: 30px;
     overflow-y: scroll;
 }
 
@@ -72,14 +73,14 @@ main {
 }
 
 #descricao p {
-    max-height: 20vh;
-    text-align: justify;
-    text-indent: 2em;
+    height: 20vh;
+    text-align: center;
     overflow-y: scroll;
     background-color: var(--color2);
     border-radius: 10px;
-    padding: 0px 10px;
+    padding: 10px 10px;
     margin-top: 5px;
+    font-size: 1.2em;
 }
 
 #preco {
