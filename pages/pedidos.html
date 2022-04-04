@@ -6,52 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style/pedidos-page.css">
     <title>Pedidos</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="../services/api.js"></script>
+    <script src="../services/pedidos.js"></script>
 </head>
-<body>
+<body onload="getProdutos()">
     <main>
         <div id="pedidos">
             <label for="">Meus Pedidos:</label>
             <div id="containerpedidos">
+                <!--
                 <div class="pedido">
                     <label class="nomepedido" for="">Carne moida</label>
                     <label class="precopedido" for="">20,00 </label>
                     <img src="../icons/lixeirinha.png" alt="">
                 </div>
-                <div class="pedido">
-                    <label class="nomepedido" for="">Carne moida</label>
-                    <label class="precopedido" for="">20,00 </label>
-                    <img src="../icons/lixeirinha.png" alt="">
-                </div>
-                <div class="pedido">
-                    <label class="nomepedido" for="">Carne moida</label>
-                    <label class="precopedido" for="">20,00 </label>
-                    <img src="../icons/lixeirinha.png" alt="">
-                </div>
-                <div class="pedido">
-                    <label class="nomepedido" for="">Carne moida</label>
-                    <label class="precopedido" for="">20,00 </label>
-                    <img src="../icons/lixeirinha.png" alt="">
-                </div>
-                <div class="pedido">
-                    <label class="nomepedido" for="">Carne moida</label>
-                    <label class="precopedido" for="">20,00 </label>
-                    <img src="../icons/lixeirinha.png" alt="">
-                </div>
-                <div class="pedido">
-                    <label class="nomepedido" for="">Carne moida</label>
-                    <label class="precopedido" for="">20,00 </label>
-                    <img src="../icons/lixeirinha.png" alt="">
-                </div>
-                <div class="pedido">
-                    <label class="nomepedido" for="">Carne moida</label>
-                    <label class="precopedido" for="">20,00 </label>
-                    <img src="../icons/lixeirinha.png" alt="">
-                </div>
-                <div class="pedido">
-                    <label class="nomepedido" for="">Carne moida</label>
-                    <label class="precopedido" for="">20,00 </label>
-                    <img src="../icons/lixeirinha.png" alt="">
-                </div>
+                -->
             </div>
             <div id="total">
                 <label for="">Total:</label>
