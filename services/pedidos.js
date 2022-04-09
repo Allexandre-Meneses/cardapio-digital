@@ -3,7 +3,11 @@
 function getProdutos() {
 
     let pedidos = JSON.parse(localStorage.getItem('pedidos'))
+
     let containerpedidos = window.document.getElementById('containerpedidos')
+    let total = window.document.getElementById('valortotal')
+
+    let valorTotal = 0
 
     for (let count in pedidos) {
     axios.get(url + `/produto/${pedidos[count]}`)
@@ -17,6 +21,10 @@ function getProdutos() {
                 <img src="../icons/lixeirinha.png" onclick="removePedido(${produto['id']})">
             `
             containerpedidos.append(Showpedido)
+            
+            valorTotal = valorTotal+ Number(produto['preco'])
+
+            total.innerHTML = valorTotal.toFixed(2).replace(".", ",") + " R$ "
          })
          .catch(error => {
             alert(error)
