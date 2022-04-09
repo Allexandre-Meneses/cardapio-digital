@@ -14,7 +14,7 @@ function getProdutos() {
             Showpedido.innerHTML = `
                 <label class="nomepedido" for="">${produto['name']}</label>
                 <label class="precopedido" for="">${produto['preco'].toFixed(2).replace(".", ",")}</label>
-                <img src="../icons/lixeirinha.png" alt="">
+                <img src="../icons/lixeirinha.png" onclick="removePedido(${produto['id']})">
             `
             containerpedidos.append(Showpedido)
          })
@@ -23,3 +23,4 @@ function getProdutos() {
          })
     }
 }
+

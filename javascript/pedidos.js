@@ -13,3 +13,16 @@ function AdicionarPedido() {
     localStorage.setItem('pedidos', JSON.stringify(pedidos))
 
 }
+
+function removePedido(id) {
+    alert(id)
+    let pedidos = JSON.parse(localStorage.getItem('pedidos'))
+
+    let index = pedidos.indexOf(id)
+
+    pedidos.splice(index, 1)
+
+    localStorage.setItem('pedidos', JSON.stringify(pedidos))
+
+    window.location.reload()
+}
