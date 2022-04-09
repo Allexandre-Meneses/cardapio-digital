@@ -137,3 +137,51 @@ display: block;
     width: 68%;
 }
 
+.popup {
+    display: none;
+    position: fixed;
+    top: 0; bottom: 0;
+    left: 0; right: 0;
+    margin: auto;
+    width: 270px;
+    height: 90px;
+    padding: 15px;
+    box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.377);
+    border-radius: 7px;
+    background-color: var(--color3);
+    text-align: center;
+}
+
+.popup > label {
+    color: white;
+    font-size: 1.2em;
+}
+
+.popup > input {
+    font-size: 1.2em;
+    width: 40px;
+    height: 20px;
+    padding: 1px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+#buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+#cancel {
+    font-weight: bold;
+    color: white;
+    background-color: var(--color0);
+    border-radius: 5px;
+    padding: 8px;
+}
+
+#add {
+    background-color: var(--color1);
+    border-radius: 5px;
+    padding: 8px;
+}
