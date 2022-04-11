@@ -1,21 +1,28 @@
 // MÉTODO PARA ADICIONAR PEDIDO USANDO O LOCAL STORAGE
 
-function AdicionarPedido() {
+function adicionarPedido() {
+
     let produto_id = localStorage.getItem('produto_id')
     let pedidos = JSON.parse(localStorage.getItem('pedidos'))
+    
+    let quantidade = Number(document.querySelector('#quantidade').value)
 
     if (pedidos == null) {
         localStorage.setItem('pedidos', JSON.stringify(pedidos = []))
     }
 
-    pedidos.push(Number(produto_id))
+    for (let count = 0; count < quantidade; count++){
+        pedidos.push(Number(produto_id))
+    }
 
     localStorage.setItem('pedidos', JSON.stringify(pedidos))
+
+    window.location.href = "pedidos.html"
 
 }
 
 function removePedido(id) {
-    alert(id)
+
     let pedidos = JSON.parse(localStorage.getItem('pedidos'))
 
     let index = pedidos.indexOf(id)

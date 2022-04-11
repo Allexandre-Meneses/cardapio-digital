@@ -33,24 +33,28 @@
                 <img src="../icons/sininho.png" alt="">
                 <label for="">Garçom</label>
             </div>
-            <div id="addpedido" onclick="AdicionarPedido()">
+            <div id="addpedido" onclick="mostrarPopup()">
                 <img src="../icons/add.png" alt="">
                 <label for="">Adicionar</label>
             </div>
         </div>
     </div>
+
+    <!-- POP UP PARA ADD AO PEDIDO -->
+    
     <div class="popup">
         <label for="">Quantidade:</label>
-        <input type="number">
+        <input type="number" id="quantidade">
         <div id="buttons">
-            <div id="cancel">
+            <div id="cancel" onclick="fecharPopup()">
                 Cancelar
             </div>
-            <div id="add">
+            <div id="add" onclick="adicionarPedido()">
                 Adicionar
             </div>
         </div>
     </div>
+<script src="../javascript/produto.js"></script>
 <script src="../javascript/pedidos.js"></script>
 </body>
 </html>
